@@ -81,91 +81,90 @@ extern "C" {
   #define PB7   32 //1:I2C1_SDA / TIM4_CH2 / USART1_RX
   #define PB8   33 //1:I2C1_SCL / TIM4_CH3 / SDIO_D4 / TIM10_CH1
   #define PB9   34 //1:I2C1_SDA / TIM4_CH4 / SDIO_D5 / TIM11_CH1 / SPI2_NSS
-  #define PE2   35 //1:FSMC_A23
-  #define PE3   36 //1:FSMC_A19
-  #define PE4   37 //1:FSMC_A20
-  #define PE5   38 //1:FSMC_A21
-  #define PE6   39 //1:FSMC_A22
-  #define PE7   40 //1:FSMC_D4
-  #define PE8   41 //1:FSMC_D5
-  #define PE9   42 //1:FSMC_D6 / TIM1_CH1
-  #define PE10  43 //1:FSMC_D7
-  #define PE11  44 //1:FSMC_D8 / TIM1_CH2
-  #define PE12  45 //1:FSMC_D9
-  #define PE13  46 //1:FSMC_D10 / TIM1_CH3
-  #define PE14  47 //1:FSMC_D11 / TIM1_CH4
-  #define PE15  48 //1:FSMC_D12
-  #define PD8   49 //1:FSMC_D13 / USART3_TX
-  #define PD9   50 //1:FSMC_D14 / USART3_RX
-  #define PD10  51 //1:FSMC_D15
-  #define PD11  52 //1:FSMC_A16
-  #define PD12  53 //1:FSMC_A17 / TIM4_CH1
-  #define PD13  54 //1:FSMC_A18 / TIM4_CH2
-  #define PD14  55 //1:FSMC_D0 / TIM4_CH3
-  #define PD15  56 //1:FSMC_D1 / TIM4_CH4
-  #define PD0   57 //1:FSMC_D2
-  #define PD1   58 //1:FSMC_D3
-  #define PD3   59 //1:FSMC_CLK
-  #define PD4   60 //1:FSMC_NOE
-  #define PD5   61 //1:USART2_TX
-  #define PD6   62 //1:USART2_RX
-  #define PD7   63
-  #define PE0   64
-  #define PE1   65
-  #define PF0   66 //1:FSMC_A0 / I2C2_SDA
-  #define PF1   67 //1:FSMC_A1 / I2C2_SCL
-  #define PF2   68 //1:FSMC_A2
-  #define PF11  69
-  #define PF12  70 //1:FSMC_A6
-  #define PF13  71 //1:FSMC_A7
-  #define PF14  72 //1:FSMC_A8
-  #define PF15  73 //1:FSMC_A9
-  #define PG0   74 //1:FSMC_A10
-  #define PG1   75 //1:FSMC_A11
-  #define PG2   76 //1:FSMC_A12
-  #define PG3   77 //1:FSMC_A13
-  #define PG4   78 //1:FSMC_A14
-  #define PG5   79 //1:FSMC_A15
-  #define PG6   80
-  #define PG7   81
-  #define PG8   82
-  #define PG9   83 //1:USART6_RX
-  #define PG10  84 //1:FSMC_NE3
-  #define PG11  85
-  #define PG12  86 //1:FSMC_NE4
-  #define PG13  87 //1:FSMC_A24
-  #define PG14  88 //1:FSMC_A25 / USART6_TX
-  #define PG15  89
-  #define PA0   90  //1:UART4_TX / TIM5_CH1  2:ADC123_IN0
-  #define PA1   91 //1:UART4_RX / TIM5_CH2 / TIM2_CH2  2:ADC123_IN1
-  #define PA2   92 //1:USART2_TX /TIM5_CH3 / TIM9_CH1 / TIM2_CH3  2:ADC123_IN2
-  #define PA3   93 //1:USART2_RX /TIM5_CH4 / TIM9_CH2 / TIM2_CH4  2:ADC123_IN3
-  #define PA4   94 //NOT FT 1:SPI1_NSS / SPI3_NSS / USART2_CK  2:ADC12_IN4 / DAC_OUT1
-  #define PA5   95 //NOT FT 1:SPI1_SCK  2:ADC12_IN5 / DAC_OUT2
-  #define PA6   96 //1:SPI1_MISO / TIM13_CH1 / TIM3_CH1  2:ADC12_IN6
-  #define PA7   97 //1:SPI1_MOSI / TIM14_CH1 / TIM3_CH2  2:ADC12_IN7
-  #define PB0   98 //1:TIM3_CH3  2:ADC12_IN8
-  #define PB1   99 //1:TIM3_CH4  2:ADC12_IN9
-  #define PC0   100  //1:  2:ADC123_IN10
-  #define PC1   101  //1:  2:ADC123_IN11
-  #define PC2   102  //1:SPI2_MISO  2:ADC123_IN12
-  #define PC3   103  //1:SPI2_MOSI  2:ADC123_IN13
-  #define PC4   104 //1:  2:ADC12_IN14
-  #define PC5   105 //1:  2:ADC12_IN15
-  #define PF3   106 //1:FSMC_A3  2:ADC3_IN9
-  #define PF4   107 //1:FSMC_A4  2:ADC3_IN14
-  #define PF5   108 //1:FSMC_A5  2:ADC3_IN15
-  #define PF6   109 //1:TIM10_CH1  2:ADC3_IN4
-  #define PF7   110 //1:TIM11_CH1  2:ADC3_IN5
-  #define PF8   111 //1:TIM13_CH1  2:ADC3_IN6
-  #define PF9   112 //1;TIM14_CH1  2:ADC3_IN7
-  #define PF10  113 //2:ADC3_IN8
-
+ #define PA0   35 //1:UART4_TX / TIM5_CH1  2:ADC123_IN0
+  #define PA1   36 //1:UART4_RX / TIM5_CH2 / TIM2_CH2  2:ADC123_IN1
+  #define PA2   37 //1:USART2_TX /TIM5_CH3 / TIM9_CH1 / TIM2_CH3  2:ADC123_IN2
+  #define PA3   38 //1:USART2_RX /TIM5_CH4 / TIM9_CH2 / TIM2_CH4  2:ADC123_IN3
+  #define PA4   39 //NOT FT 1:SPI1_NSS / SPI3_NSS / USART2_CK  2:ADC12_IN4 / DAC_OUT1
+  #define PA5   40 //NOT FT 1:SPI1_SCK  2:ADC12_IN5 / DAC_OUT2
+  #define PA6   41 //1:SPI1_MISO / TIM13_CH1 / TIM3_CH1  2:ADC12_IN6
+  #define PA7   42 //1:SPI1_MOSI / TIM14_CH1 / TIM3_CH2  2:ADC12_IN7
+  #define PB0   43 //1:TIM3_CH3  2:ADC12_IN8
+  #define PB1   44 //1:TIM3_CH4  2:ADC12_IN9
+  #define PC0   45 //1:  2:ADC123_IN10
+  #define PC1   46 //1:  2:ADC123_IN11
+  #define PC2   47 //1:SPI2_MISO  2:ADC123_IN12
+  #define PC3   48 //1:SPI2_MOSI  2:ADC123_IN13
+  #define PC4   49 //1:  2:ADC12_IN14
+  #define PC5   50 //1:  2:ADC12_IN15
+  #define PF3   51 //1:FSMC_A3  2:ADC3_IN9
+    #define PF4   52 //1:FSMC_A4  2:ADC3_IN14
+    #define PF5   53 //1:FSMC_A5  2:ADC3_IN15
+    #define PF6   54 //1:TIM10_CH1  2:ADC3_IN4
+    #define PF7   55 //1:TIM11_CH1  2:ADC3_IN5
+    #define PF8   56 //1:TIM13_CH1  2:ADC3_IN6
+    #define PF9   57 //1;TIM14_CH1  2:ADC3_IN7
+    #define PF10  58 //2:ADC3_IN8
+  #define PE2   59 //1:FSMC_A23
+  #define PE3   60 //1:FSMC_A19
+  #define PE4  61 //1:FSMC_A20
+  #define PE5  62 //1:FSMC_A21
+  #define PE6  63 //1:FSMC_A22
+  #define PE7   64 //1:FSMC_D4
+  #define PE8  65 //1:FSMC_D5
+  #define PE9  66 //1:FSMC_D6 / TIM1_CH1
+  #define PE10  67 //1:FSMC_D7
+  #define PE11 68//1:FSMC_D8 / TIM1_CH2
+  #define PE12  69 //1:FSMC_D9
+  #define PE13  70 //1:FSMC_D10 / TIM1_CH3
+  #define PE14  71 //1:FSMC_D11 / TIM1_CH4
+  #define PE15  72 //1:FSMC_D12
+  #define PD8   73 //1:FSMC_D13 / USART3_TX
+  #define PD9   74 //1:FSMC_D14 / USART3_RX
+  #define PD10  75 //1:FSMC_D15
+  #define PD11 76 //1:FSMC_A16
+  #define PD12 77 //1:FSMC_A17 / TIM4_CH1
+  #define PD13  78 //1:FSMC_A18 / TIM4_CH2
+  #define PD14  79 //1:FSMC_D0 / TIM4_CH3
+  #define PD15  80 //1:FSMC_D1 / TIM4_CH4
+  #define PD0   81//1:FSMC_D2
+  #define PD1  82 //1:FSMC_D3
+  #define PD3   83 //1:FSMC_CLK
+  #define PD4  84 //1:FSMC_NOE
+  #define PD5   85 //1:USART2_TX
+  #define PD6  86//1:USART2_RX
+  #define PD7  87
+  #define PE0   88
+  #define PE1   89
+  #define PF0   90 //1:FSMC_A0 / I2C2_SDA
+  #define PF1   91 //1:FSMC_A1 / I2C2_SCL
+  #define PF2   92 //1:FSMC_A2
+  #define PF11  93
+  #define PF12  94 //1:FSMC_A6
+  #define PF13  95 //1:FSMC_A7
+  #define PF14  96 //1:FSMC_A8
+  #define PF15  97 //1:FSMC_A9
+  #define PG0   98 //1:FSMC_A10
+  #define PG1   99 //1:FSMC_A11
+  #define PG2   100 //1:FSMC_A12
+  #define PG3   101 //1:FSMC_A13
+  #define PG4   102 //1:FSMC_A14
+  #define PG5   103 //1:FSMC_A15
+  #define PG6   104
+  #define PG7   105
+  #define PG8   106
+  #define PG9   107//1:USART6_RX
+  #define PG10  108 //1:FSMC_NE3
+  #define PG11  109
+  #define PG12  110 //1:FSMC_NE4
+  #define PG13  111 //1:FSMC_A24
+  #define PG14  112 //1:FSMC_A25 / USART6_TX
+  #define PG15  113
 // This must be a literal
 #define NUM_DIGITAL_PINS        114
 // This must be a literal with a value less than or equal to MAX_ANALOG_INPUTS
 #define NUM_ANALOG_INPUTS       24
-#define NUM_ANALOG_FIRST        90
+#define NUM_ANALOG_FIRST        35
 
 // Below ADC, DAC and PWM definitions already done in the core
 // Could be redefined here if needed
@@ -198,8 +197,13 @@ extern "C" {
 #define TIMER_SERVO             TIM2  //TODO: advanced-control timers don't work
 
 // UART Definitions
-// Define here Serial instance number to map on Serial generic name
-#define SERIAL_UART_INSTANCE    3 //ex: 2 for Serial2 (USART2)
+//#define ENABLE_HWSERIAL1        done automatically by the #define SERIAL_UART_INSTANCE below
+#define ENABLE_HWSERIAL3
+//#define ENABLE_HWSERIAL6
+
+// Define here Serial instance number to map on Serial generic name (if not already used by SerialUSB)
+#define SERIAL_UART_INSTANCE    3 //1 for Serial = Serial1 (USART1)
+
 // DEBUG_UART could be redefined to print on another instance than 'Serial'
 //#define DEBUG_UART              ((USART_TypeDef *) U(S)ARTX) // ex: USART3
 // DEBUG_UART baudrate, default: 9600 if not defined
@@ -207,10 +211,27 @@ extern "C" {
 // DEBUG_UART Tx pin name, default: the first one found in PinMap_UART_TX for DEBUG_UART
 //#define DEBUG_PINNAME_TX        PX_n // PinName used for TX
 
+
 // Default pin used for 'Serial' instance (ex: ST-Link)
 // Mandatory for Firmata
 #define PIN_SERIAL_RX           PB11//PA10
 #define PIN_SERIAL_TX           PB10//PA9
+
+// Optional PIN_SERIALn_RX and PIN_SERIALn_TX where 'n' is the U(S)ART number
+// Used when user instantiate a hardware Serial using its peripheral name.
+// Example: HardwareSerial mySerial(USART3);
+// will use PIN_SERIAL3_RX and PIN_SERIAL3_TX if defined.
+//#define PIN_SERIAL1_RX          PA10
+//#define PIN_SERIAL1_TX          PA9
+//#define PIN_SERIAL3_TX          PD8
+//#define PIN_SERIAL6_RX          PC7
+//#define PIN_SERIAL6_TX          PC6
+//#define PIN_SERIALLP1_RX        x // For LPUART1 RX
+//#define PIN_SERIALLP1_TX        x // For LPUART1 TX
+/* HAL configuration */
+#define HSE_VALUE               8000000U
+
+#define FLASH_PAGE_SIZE         (4U * 1024U)
 
 #ifdef __cplusplus
 } // extern "C"

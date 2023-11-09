@@ -3,7 +3,7 @@
     "cpu": "cortex-m4",
     "extra_flags": "-DSTM32F4 -DSTM32F407xx",
     "f_cpu": "168000000L",
-    "mcu": "stm32f407zgt6",
+    "mcu": "stm32f407zet6",
     "product_line": "STM32F407xx",
     "variant": "MARLIN_F407ZE"
   },
