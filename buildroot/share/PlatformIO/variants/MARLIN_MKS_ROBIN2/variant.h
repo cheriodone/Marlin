@@ -42,15 +42,14 @@ extern "C" {
 #endif // __cplusplus
 
 /*----------------------------------------------------------------------------
- *        Pins
+ *        STM32 pins number
  *----------------------------------------------------------------------------*/
-//extern const PinName digitalPin[];
 
-  #define PC13  0
-  #define PC14  1  //OSC32_IN
-  #define PC15  2  //OSC32_OUT
-  #define PH0   3  //OSC_IN
-  #define PH1   4  //OSC_OUT
+#define PC13  0
+  #define PC14  1 //OSC32_IN
+  #define PC15  2 //OSC32_OUT
+  #define PH0   3 //OSC_IN
+  #define PH1   4 //OSC_OUT
   #define PB2   5 //BOOT1
   #define PB10  6 //1:SPI2_SCK / I2C2_SCL / USART3_TX / TIM2_CH3
   #define PB11  7 //1:I2C2_SDA / USART3_RX / TIM2_CH4
@@ -81,7 +80,7 @@ extern "C" {
   #define PB7   32 //1:I2C1_SDA / TIM4_CH2 / USART1_RX
   #define PB8   33 //1:I2C1_SCL / TIM4_CH3 / SDIO_D4 / TIM10_CH1
   #define PB9   34 //1:I2C1_SDA / TIM4_CH4 / SDIO_D5 / TIM11_CH1 / SPI2_NSS
- #define PA0   35 //1:UART4_TX / TIM5_CH1  2:ADC123_IN0
+  #define PA0   35 //1:UART4_TX / TIM5_CH1  2:ADC123_IN0
   #define PA1   36 //1:UART4_RX / TIM5_CH2 / TIM2_CH2  2:ADC123_IN1
   #define PA2   37 //1:USART2_TX /TIM5_CH3 / TIM9_CH1 / TIM2_CH3  2:ADC123_IN2
   #define PA3   38 //1:USART2_RX /TIM5_CH4 / TIM9_CH2 / TIM2_CH4  2:ADC123_IN3
@@ -97,7 +96,7 @@ extern "C" {
   #define PC3   48 //1:SPI2_MOSI  2:ADC123_IN13
   #define PC4   49 //1:  2:ADC12_IN14
   #define PC5   50 //1:  2:ADC12_IN15
-  #define PF3   51 //1:FSMC_A3  2:ADC3_IN9
+   #define PF3   51 //1:FSMC_A3  2:ADC3_IN9
     #define PF4   52 //1:FSMC_A4  2:ADC3_IN14
     #define PF5   53 //1:FSMC_A5  2:ADC3_IN15
     #define PF6   54 //1:TIM10_CH1  2:ADC3_IN4
@@ -105,16 +104,16 @@ extern "C" {
     #define PF8   56 //1:TIM13_CH1  2:ADC3_IN6
     #define PF9   57 //1;TIM14_CH1  2:ADC3_IN7
     #define PF10  58 //2:ADC3_IN8
-  #define PE2   59 //1:FSMC_A23
+   #define PE2   59 //1:FSMC_A23
   #define PE3   60 //1:FSMC_A19
-  #define PE4  61 //1:FSMC_A20
-  #define PE5  62 //1:FSMC_A21
-  #define PE6  63 //1:FSMC_A22
+  #define PE4   61 //1:FSMC_A20
+  #define PE5   62 //1:FSMC_A21
+  #define PE6   63 //1:FSMC_A22
   #define PE7   64 //1:FSMC_D4
-  #define PE8  65 //1:FSMC_D5
-  #define PE9  66 //1:FSMC_D6 / TIM1_CH1
+  #define PE8   65 //1:FSMC_D5
+  #define PE9   66 //1:FSMC_D6 / TIM1_CH1
   #define PE10  67 //1:FSMC_D7
-  #define PE11 68//1:FSMC_D8 / TIM1_CH2
+  #define PE11  68 //1:FSMC_D8 / TIM1_CH2
   #define PE12  69 //1:FSMC_D9
   #define PE13  70 //1:FSMC_D10 / TIM1_CH3
   #define PE14  71 //1:FSMC_D11 / TIM1_CH4
@@ -122,18 +121,18 @@ extern "C" {
   #define PD8   73 //1:FSMC_D13 / USART3_TX
   #define PD9   74 //1:FSMC_D14 / USART3_RX
   #define PD10  75 //1:FSMC_D15
-  #define PD11 76 //1:FSMC_A16
-  #define PD12 77 //1:FSMC_A17 / TIM4_CH1
+  #define PD11  76 //1:FSMC_A16
+  #define PD12  77 //1:FSMC_A17 / TIM4_CH1
   #define PD13  78 //1:FSMC_A18 / TIM4_CH2
   #define PD14  79 //1:FSMC_D0 / TIM4_CH3
   #define PD15  80 //1:FSMC_D1 / TIM4_CH4
-  #define PD0   81//1:FSMC_D2
-  #define PD1  82 //1:FSMC_D3
+  #define PD0   81 //1:FSMC_D2
+  #define PD1   82 //1:FSMC_D3
   #define PD3   83 //1:FSMC_CLK
-  #define PD4  84 //1:FSMC_NOE
+  #define PD4   84 //1:FSMC_NOE
   #define PD5   85 //1:USART2_TX
-  #define PD6  86//1:USART2_RX
-  #define PD7  87
+  #define PD6   86 //1:USART2_RX
+  #define PD7   87
   #define PE0   88
   #define PE1   89
   #define PF0   90 //1:FSMC_A0 / I2C2_SDA
@@ -153,7 +152,7 @@ extern "C" {
   #define PG6   104
   #define PG7   105
   #define PG8   106
-  #define PG9   107//1:USART6_RX
+  #define PG9   107 //1:USART6_RX
   #define PG10  108 //1:FSMC_NE3
   #define PG11  109
   #define PG12  110 //1:FSMC_NE4
@@ -161,12 +160,11 @@ extern "C" {
   #define PG14  112 //1:FSMC_A25 / USART6_TX
   #define PG15  113
 
-
 // This must be a literal
 #define NUM_DIGITAL_PINS        114
 // This must be a literal with a value less than or equal to MAX_ANALOG_INPUTS
 #define NUM_ANALOG_INPUTS       24
-#define NUM_ANALOG_FIRST        35
+#define NUM_ANALOG_FIRST        NUM_DIGITAL_PINS
 
 // Below ADC, DAC and PWM definitions already done in the core
 // Could be redefined here if needed
@@ -175,9 +173,9 @@ extern "C" {
 //#define DACC_RESOLUTION         12
 
 // PWM resolution
-#define PWM_RESOLUTION          8
-#define PWM_FREQUENCY           20000
-#define PWM_MAX_DUTY_CYCLE      255
+//#define PWM_RESOLUTION          8
+//#define PWM_FREQUENCY           20000
+//#define PWM_MAX_DUTY_CYCLE      255
 
 // Below SPI and I2C definitions already done in the core
 // Could be redefined here if differs from the default one

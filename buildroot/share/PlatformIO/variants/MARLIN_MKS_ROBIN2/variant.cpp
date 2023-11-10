@@ -40,8 +40,9 @@ extern "C" {
 // Pin number
 // This array allows to wrap Arduino pin number(Dx or x)
 // to STM32 PinName (PX_n)
+// Digital PinName array
 const PinName digitalPin[] = {
-  PC_13, //D0
+ PC_13, //D0
   PC_14, //D1  - OSC32_IN
   PC_15, //D2  - OSC32_OUT
   PH_0,  //D3  - OSC_IN
@@ -92,14 +93,14 @@ const PinName digitalPin[] = {
   PC_3,  //D48/A13 - 1:SPI2_MOSI  2:ADC123_IN13
   PC_4,  //D49/A14 - 1:  2:ADC12_IN14
   PC_5,  //D50/A15 - 1:  2:ADC12_IN15
-    PF_3,  //D51/A16 - 1:FSMC_A3  2:ADC3_IN9
-    PF_4,  //D52/A17 - 1:FSMC_A4  2:ADC3_IN14
-    PF_5,  //D53/A18 - 1:FSMC_A5  2:ADC3_IN15
-    PF_6,  //D54/A19 - 1:TIM10_CH1  2:ADC3_IN4
-    PF_7,  //D55/A20 - 1:TIM11_CH1  2:ADC3_IN5
-    PF_8,  //D56/A21 - 1:TIM13_CH1  2:ADC3_IN6
-    PF_9,  //D57/A22 - 1;TIM14_CH1  2:ADC3_IN7
-    PF_10, //D58/A23 - 2:ADC3_IN8
+  PF_3,  //D51/A16 - 1:FSMC_A3  2:ADC3_IN9
+  PF_4,  //D52/A17 - 1:FSMC_A4  2:ADC3_IN14
+  PF_5,  //D53/A18 - 1:FSMC_A5  2:ADC3_IN15
+  PF_6,  //D54/A19 - 1:TIM10_CH1  2:ADC3_IN4
+  PF_7,  //D55/A20 - 1:TIM11_CH1  2:ADC3_IN5
+  PF_8,  //D56/A21 - 1:TIM13_CH1  2:ADC3_IN6
+  PF_9,  //D57/A22 - 1;TIM14_CH1  2:ADC3_IN7
+  PF_10, //D58/A23 - 2:ADC3_IN8
   PE_2,  //D59 - 1:FSMC_A23
   PE_3,  //D60 - 1:FSMC_A19
   PE_4,  //D61 - 1:FSMC_A20
@@ -155,33 +156,8 @@ const PinName digitalPin[] = {
   PG_13, //D111 - 1:FSMC_A24
   PG_14, //D112 - 1:FSMC_A25 / USART6_TX
   PG_15, //D113
-
-   //Duplicated ADC Pins
-   PA_0,  //D35/A0 - 1:UART4_TX / TIM5_CH1  2:ADC123_IN0
-  PA_1,  //D36/A1 - 1:UART4_RX / TIM5_CH2 / TIM2_CH2  2:ADC123_IN1
-  PA_2,  //D37/A2 - 1:USART2_TX /TIM5_CH3 / TIM9_CH1 / TIM2_CH3  2:ADC123_IN2
-  PA_3,  //D38/A3 - 1:USART2_RX /TIM5_CH4 / TIM9_CH2 / TIM2_CH4  2:ADC123_IN3
-  PA_4,  //D39/A4 - NOT FT 1:SPI1_NSS / SPI3_NSS / USART2_CK  2:ADC12_IN4 / DAC_OUT1
-  PA_5,  //D40/A5 - NOT FT 1:SPI1_SCK  2:ADC12_IN5 / DAC_OUT2
-  PA_6,  //D41/A6 - 1:SPI1_MISO / TIM13_CH1 / TIM3_CH1  2:ADC12_IN6
-  PA_7,  //D42/A7 - 1:SPI1_MOSI / TIM14_CH1 / TIM3_CH2  2:ADC12_IN7
-  PB_0,  //D43/A8 - 1:TIM3_CH3  2:ADC12_IN8
-  PB_1,  //D44/A9 - 1:TIM3_CH4  2:ADC12_IN9
-  PC_0,  //D45/A10 - 1:  2:ADC123_IN10
-  PC_1,  //D46/A11 - 1:  2:ADC123_IN11
-  PC_2,  //D47/A12 - 1:SPI2_MISO  2:ADC123_IN12
-  PC_3,  //D48/A13 - 1:SPI2_MOSI  2:ADC123_IN13
-  PC_4,  //D49/A14 - 1:  2:ADC12_IN14
-  PC_5,  //D50/A15 - 1:  2:ADC12_IN15
-    PF_3,  //D51/A16 - 1:FSMC_A3  2:ADC3_IN9
-    PF_4,  //D52/A17 - 1:FSMC_A4  2:ADC3_IN14
-    PF_5,  //D53/A18 - 1:FSMC_A5  2:ADC3_IN15
-    PF_6,  //D54/A19 - 1:TIM10_CH1  2:ADC3_IN4
-    PF_7,  //D55/A20 - 1:TIM11_CH1  2:ADC3_IN5
-    PF_8,  //D56/A21 - 1:TIM13_CH1  2:ADC3_IN6
-    PF_9,  //D57/A22 - 1;TIM14_CH1  2:ADC3_IN7
-    PF_10, //D58/A23 - 2:ADC3_IN8
 };
+
 
 #ifdef __cplusplus
 }
@@ -198,8 +174,7 @@ extern "C" {
   * @param  None
   * @retval None
   */
-WEAK void SystemClock_Config(void)
-{
+WEAK void SystemClock_Config(void){
 
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
