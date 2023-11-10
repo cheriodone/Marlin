@@ -160,6 +160,8 @@ extern "C" {
   #define PG13  111 //1:FSMC_A24
   #define PG14  112 //1:FSMC_A25 / USART6_TX
   #define PG15  113
+
+
 // This must be a literal
 #define NUM_DIGITAL_PINS        114
 // This must be a literal with a value less than or equal to MAX_ANALOG_INPUTS
@@ -198,7 +200,7 @@ extern "C" {
 
 // UART Definitions
 //#define ENABLE_HWSERIAL1        done automatically by the #define SERIAL_UART_INSTANCE below
-#define ENABLE_HWSERIAL3
+#define ENABLE_HWSERIAL 3
 //#define ENABLE_HWSERIAL6
 
 // Define here Serial instance number to map on Serial generic name (if not already used by SerialUSB)

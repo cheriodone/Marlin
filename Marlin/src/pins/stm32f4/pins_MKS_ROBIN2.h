@@ -33,7 +33,7 @@
 
 #define BOARD_INFO_NAME "MKS_ROBIN2"
 // Avoid conflict with TIMER_TONE
-#define STEP_TIMER 10
+//#define STEP_TIMER 10
 
 #define HAS_OTG_USB_HOST_SUPPORT                  // USB Flash Drive support
 
